@@ -1,0 +1,2 @@
+# Bead_Tracker
+The function is created to track a single bead in a timelapse movie. The script use multilevel image thresholds to find the biggest object in the frame and then fit its perimeter to a circle. There is the option to use a pseudo-Gaussian method, where we delimit two rings that encompass the bright difraction ring of the bead and then find the highest pixel value in that ring circumference. Those are then used to fit in a circle. The function, accordin to proper choises, display the analysis fitting and masks created.
