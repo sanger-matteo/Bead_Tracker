@@ -124,10 +124,14 @@ for ff = srcSTART+1 : srcLAST-1
 
 end
 
-% Save results in .txt files
-dlmwrite( [OPT.path '/perimeter_Circle.txt'] , eDATA, 'delimiter', '\t')
-dlmwrite( [OPT.path '/vertex_Circle.txt'] , vDATA, 'delimiter', '\t')
-
+% Determine name of output file and save results in .txt files
+if isempty(OPT.Exp_name)
+    dlmwrite( [OPT.path '/' OPT.fold '_perim_Circle.txt'] , eDATA, 'delimiter', '\t')
+    dlmwrite( [OPT.path '/' OPT.fold '_vertex_Circle.txt'] , vDATA, 'delimiter', '\t')
+else    
+    dlmwrite( [OPT.path '/' OPT.Exp_name '_perim_Circle.txt'] , eDATA, 'delimiter', '\t')
+    dlmwrite( [OPT.path '/' OPT.Exp_name '_vertex_Circle.txt'] , vDATA, 'delimiter', '\t')
+end
 
 
 

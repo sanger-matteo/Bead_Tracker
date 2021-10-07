@@ -55,9 +55,9 @@ srcFiles = dir([OPT.path '/' OPT.fold]);
 
 % Determine name of output file and initialize the first row
 if isempty(OPT.Exp_name)
-    filename_txt = [ OPT.path '/Track_' OPT.fold '.txt'];
+    filename_txt = [ OPT.path '/' OPT.fold '_TC-Track.txt'];
 else
-    filename_txt = [ OPT.path '/Track_' OPT.Exp_name '.txt'];
+    filename_txt = [ OPT.path '/' OPT.Exp_name '_TC-Track.txt'];
 end
 file_C = fopen(filename_txt, 'w+');   
 if  OPT.Method_2 == 1
