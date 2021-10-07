@@ -62,6 +62,6 @@ Parameters for analysis
 * *Outer C* - create the inner circle by scaling radius of detected bead of a factor X (>=1) 
 
 
-Automatic generated output (Preview End_plot) displaying the R^2 displacement and the Bead radius, using _TC-Track.txt_ file.
+Automatic generated output (Preview End_plot) displaying the R^2 displacement (Ori_Disp) and the Bead radius, using _TC-Track.txt_ file.
 
 ![Plot of R^2 and Radius](../main_version/Movie_and_Images/img_Plot_Displacement_Position.png)
