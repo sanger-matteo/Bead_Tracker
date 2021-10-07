@@ -7,11 +7,13 @@ Determine analysis parameters of the movies using the GUI of the app.
 
 Working mode - There are two working modes for the app, that can be chosen with the central switch-button in the GUI
 * BeadTrack - track the center of the bead. As output it generate a .txt file organized as follow:
+
 Frame |	X_1 |	Y_1 |	nX_1 |	nY_1 |	Disp |	Ori_Disp |	Radius_1 
 ----- | --- | --- | ---- | ----- | ----- | --------- | ---------
 1.000000 | 98.598571 | 91.951804 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 20.030492	
 2.000000 | 98.389843 | 91.537679 | -0.208728 | -0.414125 | 0.463754 | 0.463754 | 20.046528
 ... | ... | ... | ... | ... | ... | ... | ... 
+
 The Frame columns is followed by the bead center position (as detected from filling to an ellipsoid). X_1 and Y_1 are the absolute positions in the frame, While the n_X-1 and n_X2
 
 * Rotation - 
