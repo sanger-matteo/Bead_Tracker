@@ -125,8 +125,8 @@ for ff = srcSTART+1 : srcLAST-1
 end
 
 % Save results in .txt files
-dlmwrite( [OPT.path '/e_DATA.txt'] , eDATA, 'delimiter', '\t')
-dlmwrite( [OPT.path '/v_DATA.txt'] , vDATA, 'delimiter', '\t')
+dlmwrite( [OPT.path '/perimeter_Circle.txt'] , eDATA, 'delimiter', '\t')
+dlmwrite( [OPT.path '/vertex_Circle.txt'] , vDATA, 'delimiter', '\t')
 
 
 
