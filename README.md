@@ -5,21 +5,14 @@ All measurements are given as _pixel units_. Using the pixel-micron conversion f
 
 Example of tracked bead | Appareance of app's GUI
 ----------------------- | -----------------------
-<img src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="28%"> | <img src="../main_version/Movie_and_Images/img_GUI.png" width="46%"> 
+<img align="center" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="110%"> | <img align="center" src="../main_version/Movie_and_Images/img_GUI.png" width="70%" hspace="100"/> 
 
-<p align="center">
-  <img src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="28%">
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="../main_version/Movie_and_Images/img_GUI.png" width="46%"> 
-</p>
-
+<br/><br/> 
 
 ## Working Modes
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
 ### BeadTrack
-This function tracks the center of the bead. As output it generate a .txt file labeled TC-Track.txt:
-
-_**TC-Track.txt**_ - the data is organized as follow:
+This function tracks the center of the bead. As output gata is saved as .txt file labeled TC-Track.txt, which is organized as follow:
 Frame |	X_1 |	Y_1 |	nX_1 |	nY_1 |	Disp |	Ori_Disp |	Radius_1 
 ----- | --- | --- | ---- | ----- | ----- | --------- | ---------
 1.000000 | 98.598571 | 91.951804 | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 20.030492	
@@ -33,6 +26,7 @@ The columns values are all in _**pixel**_:
   - *Disp* - displacement of the bead from previous frame
   - *Ori_Disp* - displacement of the bead from the ORIgin, which is the position of the bead in the first frame
   - *Radius_1* - Radius of the circle fitted around the detected bead
+
 <br/><br/> 
 
 ### Gyration
@@ -73,6 +67,7 @@ Parameters for analysis
 * *T. Levels* - use N levels to perform a multilevel image thresholds, using Otsu’s method (value of 2 is usually sufficient)
 * *Inner C* - create the inner circle by scaling radius of detected bead of a factor X (<=1) 
 * *Outer C* - create the inner circle by scaling radius of detected bead of a factor X (>=1) 
+* *Range* - Default is S:E, to perfrom analysis from start to end frame. Replace S and E to set a different range.
 
 
 ## Method
