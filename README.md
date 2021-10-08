@@ -16,9 +16,11 @@ The GUI of the app looks like this:
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
 1. **BeadTrack** - track the center of the bead. As output it generate a .txt file labeled TC-Track.txt:
 
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/img_Movie_Boab.gif)
-![GUI of the app](../main_version/Movie_and_Images/Stack_BoaB/BoaB_0102.tif)
-![GUI of the app](../main_version/Movie_and_Images/img_Bead_Detection.png)
+
+BoaB under optical trap |	Still frame |	Fittng and center track
+----------------------- | ----------- | -----------------------
+![Movie of BoaB under optical trap](../main_version/Movie_and_Images/img_Movie_Boab.gif) | ![GUI of the app](../main_version/Movie_and_Images/Stack_BoaB/BoaB_0102.tif) | ![GUI of the app](../main_version/Movie_and_Images/img_Bead_Detection.png) 
+
 
 _**TC-Track.txt**_ - the data is organized as follow:
 Frame |	X_1 |	Y_1 |	nX_1 |	nY_1 |	Disp |	Ori_Disp |	Radius_1 
