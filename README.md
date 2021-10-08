@@ -1,14 +1,34 @@
 # Bead_Tracker
 ## Introduction
-The app Bead_Tracker tracks and measures the position of a single bead held in optical tweezers. The software also can be used to track the rotational movement (gyration) of the bead around the optical trap, exploiting the bacteria-on-a-bead system.
-
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) 
-
-All measurements are given as _pixel units_. Using the pixel-micron conversion factor of the micrscoscope setup used to record movies, it possible to analyse the bead displacement and the forces generated for bead shift outside the optical trap.
+The app Bead_Tracker tracks and measures the position of a single bead held by optical tweezers. The software also can be used to track the rotational movement (gyration) of the bead around the optical trap, especially exploiting the bacteria-on-a-bead system.
+All measurements are given as _pixel units_. Using the pixel-micron conversion factor of the micrscoscope setup, it possible to analyse the bead displacement in the movies as well as forces generated when bead is pulled outside the optical trap.
 
 The GUI of the app looks like this:
 
-![GUI of the app](../main_version/Movie_and_Images/img_GUI.png)
+Example of Bead tracking |	Appareance of the GUI of the app
+------------------------ | ---------------------------------
+![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) | ![The GUI of the app looks like this:](../main_version/Movie_and_Images/img_GUI.png)
+
+## fg
+
+<p align="center">
+  <img alt="Light" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="25%">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img alt="Light" src="../main_version/Movie_and_Images/img_GUI.png" width="60%">
+</p>
+
+<table>
+  <tr>
+    <td>Example of Bead tracking</td>
+     <td>Appareance of GUI of the app</td>
+  </tr>
+  <tr>
+    <td valign="center"><img src="../main_version/Movie_and_Images/Movie_Overlay.gif"></td>
+    <td valign="center"><img src="../main_version/Movie_and_Images/img_GUI.png"></td>
+  </tr>
+ </table>
+ 
+ 
 
 ## Working Modes
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
