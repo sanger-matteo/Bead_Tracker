@@ -12,6 +12,7 @@ Provide a folder with a stack of .tiff images, which are the sequential frames o
 
 ## Using the Bead_Tracker
 The GUI of the app looks like this:
+
 ![GUI of the app](../main_version/Movie_and_Images/img_GUI.png)
 
 ### Working Modes
