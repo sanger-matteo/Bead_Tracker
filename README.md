@@ -16,10 +16,7 @@ The GUI of the app looks like this:
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
 1. **BeadTrack** - track the center of the bead. As output it generate a .txt file labeled TC-Track.txt:
 
-
-BoaB under optical trap |	Still frame |	Fittng and center track
------------------------ | ----------- | -----------------------
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/img_Movie_Boab.gif) | ![GUI of the app](../main_version/Movie_and_Images/Stack_BoaB/BoaB_0102.tif) | ![GUI of the app](../main_version/Movie_and_Images/img_Bead_Detection.png) 
+![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) 
 
 
 _**TC-Track.txt**_ - the data is organized as follow:
@@ -39,9 +36,11 @@ The columns values are all in _**pixel**_:
 
 <br/><br/>
     
-2. **Rotation** - to measure the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
+2. **Gyration** - to measure the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
 
-![GUI of the app](../main_version/Movie_and_Images/img_Set_Rotation.png)
+Bead under optical trap |	Circle for tracking Gyration of the Bead
+----------------------- | ----------------------------------------
+![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Boab.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Rotation.png)
 
 The output files are:
   * *BoaB_perim_Circle.txt* - each row is the pixel value of each pixel in the circle perimeter in one frame. Each columns is the same pixel position across all time points. Rows are ordered sequentially from first to last frame
