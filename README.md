@@ -1,12 +1,8 @@
 # Bead_Tracker
-## Introduction
-The app tracks the position of a single bead hold in optical tweezers and output the measurments. Provide a timelapse movie and the script use multilevel image thresholds to find the biggest object in the frame and then fit its perimeter to a circle. There is the option to use a pseudo-Gaussian method (option: Method 2), where we delimit two rings that encompass the bright difraction "ring" that appears around the bead and then find the highest pixel value in that ring circumference. Those are then used to fit in a circle. Lastly, The softare can be used to track the rotational movement (gyration) of the bead around the optical trap.
+### Introduction
+The app Bead_Tracker tracks and measures the position of a single bead held in optical tweezers. The software also can be used to track the rotational movement (gyration) of the bead around the optical trap, exploiting the bacteria-on-a-bead system.
 
-To identify the bead, the software creates a mask image, which will generate many potential objects (e.g. bead, cells, ...). On first frame, it will take the largest "circular" object near the center, which most likely is the trapped bead; on all following frames it will take the closest best match (by area, shape and position).
-
-All measurements are given as _pixel units_. Users must know the pixel-micron conversion factor of the micrscoscope setup used in the movies analysed. Then it is possible to use the displacement of the bead and convert to force measurement.
-
-
+All measurements are given as _pixel units_. Using the pixel-micron conversion factor of the micrscoscope setup used to record movies, it possible to analyse the bead displacement and the forces generated for bead shift outside the optical trap.
 
 ## Input
 Provide a folder with a stack of .tiff images, which are the sequential frames of the movie. Note: ideally .tiff images should be in the form PREFIX_xyz.tif, where PREFIX is a any name, and xyz a number of N digit. The latter represent frame number and ordering the the images (i.e. labeling using 4 digit numbers, number will be in form 0001 to 9999).
@@ -16,9 +12,10 @@ The GUI of the app looks like this:
 
 ![GUI of the app](../main_version/Movie_and_Images/img_GUI.png)
 
-### Working Modes
+## Working Modes
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
-1. **BeadTrack** - track the center of the bead. As output it generate a .txt file labeled TC-Track.txt:
+### BeadTrack
+This function tracks the center of the bead. As output it generate a .txt file labeled TC-Track.txt:
 
 ![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) 
 
@@ -37,19 +34,21 @@ The columns values are all in _**pixel**_:
   - *Ori_Disp* - displacement of the bead from the ORIgin, which is the position of the bead in the first frame
   - *Radius_1* - Radius of the circle fitted around the detected bead object
 <br/><br/>  
-2. **Gyration** - to measure the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
+### Gyration
+This function measures the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
 
-Bead under optical trap |	Circle for tracking Gyration of the Bead
------------------------ | ----------------------------------------
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Bead.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Rotation.png)
+Bead under optical trap |	Circle for tracking Gyration  
+----------------------- | ---------------------------- 
+![Movie of a Bead under optical trap](../main_version/Movie_and_Images/Movie_Bead.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Gyration.png)
+
+
 
 The output files are:
   * *BoaB_perim_Circle.txt* - each row is the pixel value of each pixel in the circle perimeter in one frame. Each columns is the same pixel position across all time points. Rows are ordered sequentially from first to last frame
   * *BoaB_vertex_Circle.txt* - it a subset dataset of BoaB_perim_Circle, gathering only 20 equally spaced points of the circle the perimeter.
 
 
-<br/><br/>
-### Options and Parameters
+## Options and Parameters
 Display options, to aid in following if the process is done correctly and plotting the results:
 * *Display Bead Fitting*
 * *Display Masks*
@@ -63,7 +62,15 @@ Parameters for analysis
 * *Inner C* - create the inner circle by scaling radius of detected bead of a factor X (<=1) 
 * *Outer C* - create the inner circle by scaling radius of detected bead of a factor X (>=1) 
 
-### Results
-Automatic generated output (Preview End_plot) displaying the R^2 displacement (Ori_Disp) and the Bead radius, using _TC-Track.txt_ file.
+
+Result Example - Plotting pixel value of one position along the circle allows to measure the speed and duration of gyration of the bead:
+
+![Img - Setting the cicle to measure gyration](../main_version/Movie_and_Images/img_Plot_Gyration.png)
+
+Result example - Automatic generated output (Preview End_plot) displaying the R^2 displacement (Ori_Disp) and the Bead radius, using _TC-Track.txt_ file.
 
 ![Plot of R^2 and Radius](../main_version/Movie_and_Images/img_Plot_Displacement_Position.png)
+
+
+## Method
+To identify a bead the app uses multilevel image thresholds to find potential objects. The masks of those obejects are filtered to find the potential bead. On first frame, it will take the largest "circular" object near the center, which most likely is the trapped bead; on all following frames it will take the closest best match (by area, shape and position). The bead is then fitted to a circle and will be tracked as proxy of the bead. There is also the option to use a pseudo-Gaussian method (option: Method 2), by creating two circle that encompass the bright difraction "ring" that appears around the bead. The highest pixel value found in the area between the two circles are used to fit in a circle. 
