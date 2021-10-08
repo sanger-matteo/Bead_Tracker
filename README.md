@@ -40,7 +40,7 @@ The columns values are all in _**pixel**_:
 
 Bead under optical trap |	Circle for tracking Gyration of the Bead
 ----------------------- | ----------------------------------------
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Boab.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Rotation.png)
+![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Bead.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Rotation.png)
 
 The output files are:
   * *BoaB_perim_Circle.txt* - each row is the pixel value of each pixel in the circle perimeter in one frame. Each columns is the same pixel position across all time points. Rows are ordered sequentially from first to last frame
