@@ -7,6 +7,7 @@ To identify the bead, the software creates a mask image, which will generate man
 All measurements are given as _pixel units_. Users must know the pixel-micron conversion factor of the micrscoscope setup used in the movies analysed. Then it is possible to use the displacement of the bead and convert to force measurement.
 
 
+
 ## Input
 Provide a folder with a stack of .tiff images, which are the sequential frames of the movie. Note: ideally .tiff images should be in the form PREFIX_xyz.tif, where PREFIX is a any name, and xyz a number of N digit. The latter represent frame number and ordering the the images (i.e. labeling using 4 digit numbers, number will be in form 0001 to 9999).
 
