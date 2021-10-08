@@ -323,8 +323,8 @@ function Preview_Plot(Mat_Dat)
     hnd.figure1.Position = [400 50 1400 350];
 
     subplot(2,1,1);         hold on;
-                              plot(Mat_Dat(:,1), Mat_Dat(:,6), 'Color', [0.4 0.75 1]);   
-    if  OPT.Method_2 == 1;    plot(Mat_Dat(:,1), Mat_Dat(:,14));      end
+                              plot(Mat_Dat(:,1), Mat_Dat(:,7), 'Color', [0.4 0.75 1]);   
+    if  OPT.Method_2 == 1;    plot(Mat_Dat(:,1), Mat_Dat(:,15));      end
     hnd.axes = gca;
     hnd.axes.XLim = [min(Mat_Dat(:,1)), max(Mat_Dat(:,1))];
     hnd.axes.TickDir = 'out';

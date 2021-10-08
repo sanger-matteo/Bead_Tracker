@@ -3,7 +3,7 @@
 % Import detection file.txt, where all data for the movie is already present
 
 % Reduce the output analysis if necessary to do movies of cropped time lapses:
-% Frame = Frame([1: 10 : length(Disp)]) ;
+Frame = [1: 1 : 400] ;
 % nX_1 = nX_1([1: 10 : length(Disp)]) ;
 % X_1 = X_1([1: 10 : length(Disp)]) ;
 % Y_1 = Y_1([1: 10 : length(Disp)]) ;
@@ -43,7 +43,7 @@ srcLAST = str2num(fr_num);          % Assign last frame number
 srcSTART = 1;
 
 
-Len = length(Ori_Disp);     % Length of movie and detectio
+Len = length(Ori_Disp);     % Length of movie and detection
 fps = 75 ;                  % frame rate of the movie acquisition
 time = Frame./fps;          % time in fps
 figure('Position', [100 300 1200 800]); 
