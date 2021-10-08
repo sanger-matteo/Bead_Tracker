@@ -5,7 +5,13 @@ All measurements are given as _pixel units_. Using the pixel-micron conversion f
 
 Example of tracked bead | Appareance of app's GUI
 ----------------------- | -----------------------
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) | ![The GUI of the app looks like this:](../main_version/Movie_and_Images/img_GUI.png)
+<img src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="28%"> | <img src="../main_version/Movie_and_Images/img_GUI.png" width="46%"> 
+
+<p align="center">
+  <img src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="28%">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="../main_version/Movie_and_Images/img_GUI.png" width="46%"> 
+</p>
 
 
 ## Working Modes
