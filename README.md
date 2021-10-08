@@ -5,30 +5,10 @@ All measurements are given as _pixel units_. Using the pixel-micron conversion f
 
 The GUI of the app looks like this:
 
-Example of Bead tracking |	Appareance of the GUI of the app
------------------------- | ---------------------------------
+Example of Bead tracking | Appareance of the GUI of the app
+:----------------------: | :------------------------------:
 ![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) | ![The GUI of the app looks like this:](../main_version/Movie_and_Images/img_GUI.png)
 
-## fg
-
-<p align="center">
-  <img alt="Light" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="25%">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img alt="Light" src="../main_version/Movie_and_Images/img_GUI.png" width="60%">
-</p>
-
-<table>
-  <tr>
-    <td>Example of Bead tracking</td>
-     <td>Appareance of GUI of the app</td>
-  </tr>
-  <tr>
-    <td valign="center"><img src="../main_version/Movie_and_Images/Movie_Overlay.gif"></td>
-    <td valign="center"><img src="../main_version/Movie_and_Images/img_GUI.png"></td>
-  </tr>
- </table>
- 
- 
 
 ## Working Modes
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
@@ -51,7 +31,8 @@ The columns values are all in _**pixel**_:
   - *Radius_1* - Radius of the circle fitted around the detected bead object
 <br/><br/>  
 ### Gyration
-This function measures the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
+This function measures the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. ![image](https://user-images.githubusercontent.com/72079695/136569712-197ee6dc-5ebf-41c3-9420-0d5da06dd26a.png)
+
 
 Bead under optical trap |	Circle for tracking Gyration  
 ----------------------- | ---------------------------- 
