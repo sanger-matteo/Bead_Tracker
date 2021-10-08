@@ -4,14 +4,15 @@ The app tracks the position of a single bead hold in optical tweezers and output
 
 To identify the bead, the software creates a mask image, which will generate many potential objects (e.g. bead, cells, ...). On first frame, it will take the largest "circular" object near the center, which most likely is the trapped bead; on all following frames it will take the closest best match (by area, shape and position).
 
+All measurements are given as _pixel units_. Users must know the pixel-micron conversion factor of the micrscoscope setup used in the movies analysed. Then it is possible to use the displacement of the bead and convert to force measurement.
+
+
 ## Input
 Provide a folder with a stack of .tiff images, which are the sequential frames of the movie. Note: ideally .tiff images should be in the form PREFIX_xyz.tif, where PREFIX is a any name, and xyz a number of N digit. The latter represent frame number and ordering the the images (i.e. labeling using 4 digit numbers, number will be in form 0001 to 9999).
 
 ## Using the Bead_Tracker
 The GUI of the app looks like this:
-
 ![GUI of the app](../main_version/Movie_and_Images/img_GUI.png)
-
 
 ### Working Modes
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
@@ -60,7 +61,7 @@ Parameters for analysis
 * *Inner C* - create the inner circle by scaling radius of detected bead of a factor X (<=1) 
 * *Outer C* - create the inner circle by scaling radius of detected bead of a factor X (>=1) 
 
-
+### Results
 Automatic generated output (Preview End_plot) displaying the R^2 displacement (Ori_Disp) and the Bead radius, using _TC-Track.txt_ file.
 
 ![Plot of R^2 and Radius](../main_version/Movie_and_Images/img_Plot_Displacement_Position.png)
