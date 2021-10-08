@@ -3,9 +3,9 @@
 The app Bead_Tracker tracks and measures the position of a single bead held by optical tweezers. The software also can be used to track the rotational movement (gyration) of the bead around the optical trap, especially exploiting the bacteria-on-a-bead system.
 All measurements are given as _pixel units_. Using the pixel-micron conversion factor of the micrscoscope setup, it possible to analyse the bead displacement in the movies as well as forces generated when bead is pulled outside the optical trap.
 
-Example of tracked bead | Appareance of app's GUI
------------------------ | -----------------------
-<img align="center" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="110%"> | <img align="center" src="../main_version/Movie_and_Images/img_GUI.png" width="70%" hspace="100"/> 
+Example of tracked bead | GUI of the app
+----------------------- | --------------
+<img align="center" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="100%"> | <img align="center" src="../main_version/Movie_and_Images/img_GUI.png" width="60%" hspace="135"> 
 
 <br/><br/> 
 
