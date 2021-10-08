@@ -27,8 +27,6 @@ The columns values are all in _**pixel**_:
   - *Ori_Disp* - displacement of the bead from the ORIgin, which is the position of the bead in the first frame
   - *Radius_1* - Radius of the circle fitted around the detected bead
 
-<br/><br/> 
-
 ### Gyration
 This function measures the rotational movement of the bead, exploiting the bacteria hanging outside the bacteria-on-a-bead system. After starting this analysis mode, the app display the first frame of the movie. The user than draw a circle larger than the bead and that cross where the bacterial body is roughly positioned. The intensity value of each pixel below the drawn circle will be measured and stored in two files.
 
