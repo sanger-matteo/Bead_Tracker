@@ -10,14 +10,14 @@ Provide a folder with a stack of .tiff images, which are the sequential frames o
 ## Using the Bead_Tracker
 The GUI of the app looks like this:
 
-![GUI of the app](../main_version/Movie_and_Images/img_GUI.png =572x394)
+![GUI of the app](../main_version/Movie_and_Images/img_GUI.png)
+
 
 ### Working Modes
 There are two working modes for the app, that can be chosen with the central switch-button in the GUI
 1. **BeadTrack** - track the center of the bead. As output it generate a .txt file labeled TC-Track.txt:
 
 ![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) 
-
 
 _**TC-Track.txt**_ - the data is organized as follow:
 Frame |	X_1 |	Y_1 |	nX_1 |	nY_1 |	Disp |	Ori_Disp |	Radius_1 
@@ -33,9 +33,7 @@ The columns values are all in _**pixel**_:
   - *Disp* - displacement of the bead from previous frame
   - *Ori_Disp* - displacement of the bead from the ORIgin, which is the position of the bead in the first frame
   - *Radius_1* - Radius of the circle fitted around the detected bead object
-
-<br/><br/>
-    
+<br/><br/>  
 2. **Gyration** - to measure the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
 
 Bead under optical trap |	Circle for tracking Gyration of the Bead
@@ -47,7 +45,7 @@ The output files are:
   * *BoaB_vertex_Circle.txt* - it a subset dataset of BoaB_perim_Circle, gathering only 20 equally spaced points of the circle the perimeter.
 
 
-
+<br/><br/>
 ### Options and Parameters
 Display options, to aid in following if the process is done correctly and plotting the results:
 * *Display Bead Fitting*
