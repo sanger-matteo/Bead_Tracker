@@ -6,7 +6,7 @@ All measurements are given as _pixel units_. Using the pixel-micron conversion f
 The GUI of the app looks like this:
 
 Example of Bead tracking | Appareance of the GUI of the app
-:----------------------: | :------------------------------:
+------------------------ | --------------------------------
 ![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Overlay.gif) | ![The GUI of the app looks like this:](../main_version/Movie_and_Images/img_GUI.png)
 
 
