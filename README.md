@@ -5,7 +5,7 @@ All measurements are given as _pixel units_. Using the pixel-micron conversion f
 
 Example of tracked bead | GUI of the app
 ----------------------- | --------------
-<img align="center" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="80%"> | <img align="center" src="../main_version/Movie_and_Images/img_GUI.png" width="90%"> 
+<img align="center" src="../main_version/Movie_and_Images/Movie_Overlay.gif" width="100%"> | <img align="center" src="../main_version/Movie_and_Images/img_GUI.png" width="90%"> 
 
 <br/><br/> 
 
