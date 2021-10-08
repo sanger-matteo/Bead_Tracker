@@ -39,9 +39,12 @@ The columns values are all in _**pixel**_:
 <br/><br/>  
 2. **Gyration** - to measure the rotational movement of the bead, we exploit the bacteria hanging outside the bead. After starting this analysis mode, draw a large circle around the bead. The value of each pixel that define the perimeter of the drawn circle will be measured and stored in two files. 
 
-Bead under optical trap |	Circle for tracking Gyration of the Bead
------------------------ | ----------------------------------------
-![Movie of BoaB under optical trap](../main_version/Movie_and_Images/Movie_Bead.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Rotation.png)
+Bead under optical trap |	Circle for tracking Gyration  
+----------------------- | ---------------------------- 
+![Movie of a Bead under optical trap](../main_version/Movie_and_Images/Movie_Bead.gif) | ![GUI of the app](../main_version/Movie_and_Images/img_Set_Gyration.png)
+
+Plotting pixel value of one position along the circle allows to measure the speed and duration of gyration of the bead:
+![Img - Setting the cicle to measure gyration](../main_version/Movie_and_Images/img_Plot_Gyration.png)
 
 The output files are:
   * *BoaB_perim_Circle.txt* - each row is the pixel value of each pixel in the circle perimeter in one frame. Each columns is the same pixel position across all time points. Rows are ordered sequentially from first to last frame
